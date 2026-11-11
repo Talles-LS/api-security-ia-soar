@@ -237,8 +237,8 @@ Trecho resumido de um incidente crítico:
 
 ```bash
 # 1. Clonar e entrar no repositório
-git clone <url-do-repositorio>
-cd <repositorio>
+git clone https://github.com/Talles-LS/api-security-ia-soar.git
+cd api-security-ia-soar
 
 # 2. Criar e ativar ambiente virtual
 python -m venv .venv
