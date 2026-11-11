@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-11-11T04:51:31+00:00",
+  "model": "IsolationForest",
+  "features": [
+    "hour_of_day",
+    "requests_per_min",
+    "bytes_transferred",
+    "error_rate_4xx_5xx",
+    "latency_ms"
+  ],
+  "hyperparameters": {
+    "n_estimators": 300,
+    "contamination": 0.07,
+    "max_samples": "auto",
+    "random_state": 42
+  },
+  "decision_threshold_anomaly_score": 0.624385,
+  "total_records": 5000,
+  "anomalies_detected": 350,
+  "suspicious_unique_ips": 42,
+  "confusion_matrix": {
+    "tn": 4632,
+    "fp": 18,
+    "fn": 18,
+    "tp": 332
+  },
+  "precision": 0.9486,
+  "recall": 0.9486,
+  "f1_score": 0.9486,
+  "accuracy": 0.9928,
+  "false_positive_rate": 0.0039,
+  "roc_auc": 0.9989
+}

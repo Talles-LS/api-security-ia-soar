@@ -1,0 +1,264 @@
+﻿2026-11-11 01:51:56.738 | INFO     | [PLAYBOOK ] ================================================================================================
+2026-11-11 01:51:56.738 | INFO     | [PLAYBOOK ]  SOAR ENGINE | API Abuse - Credential Stuffing & Data Exfiltration Response | PB-API-ABUSE-001 v1.3.0
+2026-11-11 01:51:56.738 | INFO     | [PLAYBOOK ] ================================================================================================
+2026-11-11 01:51:56.739 | INFO     | [PLAYBOOK ] Execução a76d707d-4bf7-53b4-ba19-962c6f96aa58 iniciada | engine: Shuffle SOAR (simulado)
+2026-11-11 01:51:56.739 | INFO     | [SIEM     ] Wazuh/ELK: 5,000 eventos de API Gateway/WAF indexados (index: aws-waf-logs-*)
+2026-11-11 01:51:56.739 | INFO     | [SIEM     ] Regra de correlação ML (Isolation Forest): 350 eventos com anomaly_pred = -1
+2026-11-11 01:51:56.752 | INFO     | [TRIAGE   ] Agrupamento por source_ip: 42 IPs suspeitos únicos
+2026-11-11 01:51:56.756 | INFO     | [TRIAGE   ] Classificação: 24 CRÍTICOS | 18 MODERADOS
+2026-11-11 01:51:56.756 | INFO     | [PLAYBOOK ] ------------------------------------------------------------------------------------
+2026-11-11 01:51:56.756 | INFO     | [SIEM     ] INC-20261111-0001 | Wazuh rule 100220 (level 14) | srcip=171.25.193.78 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.757 | INFO     | [SHUFFLE  ] INC-20261111-0001 | Webhook recebido -> execução f2dad06e | score=0.767 eventos=10
+2026-11-11 01:51:56.757 | CRITICAL | [PLAYBOOK ] INC-20261111-0001 | SEVERIDADE CRÍTICA | madrugada + 309 req/min >= 150; madrugada + 1231 kB/req >= 100 kB; anomaly_score 0.767 >= 0.68
+2026-11-11 01:51:56.757 | ERROR    | [AWS-WAF  ] INC-20261111-0001 | BLOCK 171.25.193.78/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.757 | WARNING  | [THEHIVE  ] INC-20261111-0001 | Case #9651 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.757 | WARNING  | [SOC-ALERT] INC-20261111-0001 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.757 | INFO     | [SIEM     ] INC-20261111-0002 | Wazuh rule 100220 (level 14) | srcip=146.70.124.33 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.757 | INFO     | [SHUFFLE  ] INC-20261111-0002 | Webhook recebido -> execução f1c1f1de | score=0.748 eventos=7
+2026-11-11 01:51:56.757 | CRITICAL | [PLAYBOOK ] INC-20261111-0002 | SEVERIDADE CRÍTICA | madrugada + 317 req/min >= 150; madrugada + 1599 kB/req >= 100 kB; anomaly_score 0.748 >= 0.68
+2026-11-11 01:51:56.757 | ERROR    | [AWS-WAF  ] INC-20261111-0002 | BLOCK 146.70.124.33/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.757 | WARNING  | [THEHIVE  ] INC-20261111-0002 | Case #5309 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.757 | WARNING  | [SOC-ALERT] INC-20261111-0002 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.758 | INFO     | [SIEM     ] INC-20261111-0003 | Wazuh rule 100220 (level 14) | srcip=198.98.51.189 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.758 | INFO     | [SHUFFLE  ] INC-20261111-0003 | Webhook recebido -> execução 919a3526 | score=0.746 eventos=32
+2026-11-11 01:51:56.758 | CRITICAL | [PLAYBOOK ] INC-20261111-0003 | SEVERIDADE CRÍTICA | madrugada + 304 req/min >= 150; madrugada + 1168 kB/req >= 100 kB; anomaly_score 0.746 >= 0.68
+2026-11-11 01:51:56.758 | ERROR    | [AWS-WAF  ] INC-20261111-0003 | BLOCK 198.98.51.189/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.758 | WARNING  | [THEHIVE  ] INC-20261111-0003 | Case #7309 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.758 | WARNING  | [SOC-ALERT] INC-20261111-0003 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.758 | INFO     | [SIEM     ] INC-20261111-0004 | Wazuh rule 100220 (level 14) | srcip=104.244.76.13 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.758 | INFO     | [SHUFFLE  ] INC-20261111-0004 | Webhook recebido -> execução 08176676 | score=0.745 eventos=18
+2026-11-11 01:51:56.758 | CRITICAL | [PLAYBOOK ] INC-20261111-0004 | SEVERIDADE CRÍTICA | madrugada + 314 req/min >= 150; madrugada + 2361 kB/req >= 100 kB; anomaly_score 0.745 >= 0.68
+2026-11-11 01:51:56.759 | ERROR    | [AWS-WAF  ] INC-20261111-0004 | BLOCK 104.244.76.13/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.759 | WARNING  | [THEHIVE  ] INC-20261111-0004 | Case #3276 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.759 | WARNING  | [SOC-ALERT] INC-20261111-0004 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.759 | INFO     | [SIEM     ] INC-20261111-0005 | Wazuh rule 100220 (level 14) | srcip=179.43.187.19 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.759 | INFO     | [SHUFFLE  ] INC-20261111-0005 | Webhook recebido -> execução ebf65b2e | score=0.729 eventos=5
+2026-11-11 01:51:56.759 | CRITICAL | [PLAYBOOK ] INC-20261111-0005 | SEVERIDADE CRÍTICA | madrugada + 317 req/min >= 150; madrugada + 799 kB/req >= 100 kB; anomaly_score 0.729 >= 0.68
+2026-11-11 01:51:56.759 | ERROR    | [AWS-WAF  ] INC-20261111-0005 | BLOCK 179.43.187.19/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.759 | WARNING  | [THEHIVE  ] INC-20261111-0005 | Case #2062 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.759 | WARNING  | [SOC-ALERT] INC-20261111-0005 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.759 | INFO     | [SIEM     ] INC-20261111-0006 | Wazuh rule 100220 (level 14) | srcip=23.129.64.210 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.760 | INFO     | [SHUFFLE  ] INC-20261111-0006 | Webhook recebido -> execução 2f214138 | score=0.728 eventos=55
+2026-11-11 01:51:56.760 | CRITICAL | [PLAYBOOK ] INC-20261111-0006 | SEVERIDADE CRÍTICA | madrugada + 302 req/min >= 150; madrugada + 2051 kB/req >= 100 kB; anomaly_score 0.728 >= 0.68
+2026-11-11 01:51:56.760 | ERROR    | [AWS-WAF  ] INC-20261111-0006 | BLOCK 23.129.64.210/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.760 | WARNING  | [THEHIVE  ] INC-20261111-0006 | Case #7239 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.760 | WARNING  | [SOC-ALERT] INC-20261111-0006 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.760 | INFO     | [SIEM     ] INC-20261111-0007 | Wazuh rule 100220 (level 14) | srcip=37.120.247.88 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.760 | INFO     | [SHUFFLE  ] INC-20261111-0007 | Webhook recebido -> execução 7a784513 | score=0.724 eventos=8
+2026-11-11 01:51:56.760 | CRITICAL | [PLAYBOOK ] INC-20261111-0007 | SEVERIDADE CRÍTICA | madrugada + 302 req/min >= 150; madrugada + 1501 kB/req >= 100 kB; anomaly_score 0.724 >= 0.68
+2026-11-11 01:51:56.760 | ERROR    | [AWS-WAF  ] INC-20261111-0007 | BLOCK 37.120.247.88/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.760 | WARNING  | [THEHIVE  ] INC-20261111-0007 | Case #3200 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.760 | WARNING  | [SOC-ALERT] INC-20261111-0007 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.761 | INFO     | [SIEM     ] INC-20261111-0008 | Wazuh rule 100220 (level 14) | srcip=62.102.148.69 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.761 | INFO     | [SHUFFLE  ] INC-20261111-0008 | Webhook recebido -> execução ab4b0f0c | score=0.723 eventos=11
+2026-11-11 01:51:56.761 | CRITICAL | [PLAYBOOK ] INC-20261111-0008 | SEVERIDADE CRÍTICA | madrugada + 316 req/min >= 150; madrugada + 520 kB/req >= 100 kB; anomaly_score 0.723 >= 0.68
+2026-11-11 01:51:56.761 | ERROR    | [AWS-WAF  ] INC-20261111-0008 | BLOCK 62.102.148.69/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.761 | WARNING  | [THEHIVE  ] INC-20261111-0008 | Case #4616 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.761 | WARNING  | [SOC-ALERT] INC-20261111-0008 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.761 | INFO     | [SIEM     ] INC-20261111-0009 | Wazuh rule 100210 (level 14) | srcip=185.220.101.34 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.761 | INFO     | [SHUFFLE  ] INC-20261111-0009 | Webhook recebido -> execução e796a276 | score=0.708 eventos=63
+2026-11-11 01:51:56.761 | CRITICAL | [PLAYBOOK ] INC-20261111-0009 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 98% >= 70%; madrugada + 498 req/min >= 150; anomaly_score 0.708 >= 0.68
+2026-11-11 01:51:56.761 | ERROR    | [AWS-WAF  ] INC-20261111-0009 | BLOCK 185.220.101.34/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.761 | WARNING  | [THEHIVE  ] INC-20261111-0009 | Case #4432 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.762 | WARNING  | [SOC-ALERT] INC-20261111-0009 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.762 | INFO     | [SIEM     ] INC-20261111-0010 | Wazuh rule 100220 (level 14) | srcip=195.206.105.217 | Data Exfiltration / API Scraping
+2026-11-11 01:51:56.762 | INFO     | [SHUFFLE  ] INC-20261111-0010 | Webhook recebido -> execução ea7ca8dc | score=0.705 eventos=7
+2026-11-11 01:51:56.762 | CRITICAL | [PLAYBOOK ] INC-20261111-0010 | SEVERIDADE CRÍTICA | madrugada + 282 req/min >= 150; madrugada + 826 kB/req >= 100 kB; anomaly_score 0.705 >= 0.68
+2026-11-11 01:51:56.762 | ERROR    | [AWS-WAF  ] INC-20261111-0010 | BLOCK 195.206.105.217/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.762 | WARNING  | [THEHIVE  ] INC-20261111-0010 | Case #5929 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1119, T1020
+2026-11-11 01:51:56.762 | WARNING  | [SOC-ALERT] INC-20261111-0010 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.762 | INFO     | [SIEM     ] INC-20261111-0011 | Wazuh rule 100210 (level 14) | srcip=45.155.205.233 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.762 | INFO     | [SHUFFLE  ] INC-20261111-0011 | Webhook recebido -> execução 4c13d0dc | score=0.705 eventos=22
+2026-11-11 01:51:56.762 | CRITICAL | [PLAYBOOK ] INC-20261111-0011 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 97% >= 70%; madrugada + 499 req/min >= 150; anomaly_score 0.705 >= 0.68
+2026-11-11 01:51:56.762 | ERROR    | [AWS-WAF  ] INC-20261111-0011 | BLOCK 45.155.205.233/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.763 | WARNING  | [THEHIVE  ] INC-20261111-0011 | Case #6779 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.763 | WARNING  | [SOC-ALERT] INC-20261111-0011 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.763 | INFO     | [SIEM     ] INC-20261111-0012 | Wazuh rule 100210 (level 14) | srcip=80.94.95.115 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.763 | INFO     | [SHUFFLE  ] INC-20261111-0012 | Webhook recebido -> execução 36167903 | score=0.704 eventos=8
+2026-11-11 01:51:56.763 | CRITICAL | [PLAYBOOK ] INC-20261111-0012 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 93% >= 70%; madrugada + 457 req/min >= 150; anomaly_score 0.704 >= 0.68
+2026-11-11 01:51:56.763 | ERROR    | [AWS-WAF  ] INC-20261111-0012 | BLOCK 80.94.95.115/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.763 | WARNING  | [THEHIVE  ] INC-20261111-0012 | Case #6743 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.763 | WARNING  | [SOC-ALERT] INC-20261111-0012 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.763 | INFO     | [SIEM     ] INC-20261111-0013 | Wazuh rule 100210 (level 14) | srcip=185.220.101.57 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.763 | INFO     | [SHUFFLE  ] INC-20261111-0013 | Webhook recebido -> execução 42d40333 | score=0.703 eventos=31
+2026-11-11 01:51:56.763 | CRITICAL | [PLAYBOOK ] INC-20261111-0013 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 96% >= 70%; madrugada + 480 req/min >= 150; anomaly_score 0.703 >= 0.68
+2026-11-11 01:51:56.764 | ERROR    | [AWS-WAF  ] INC-20261111-0013 | BLOCK 185.220.101.57/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.764 | WARNING  | [THEHIVE  ] INC-20261111-0013 | Case #4414 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.764 | WARNING  | [SOC-ALERT] INC-20261111-0013 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.764 | INFO     | [SIEM     ] INC-20261111-0014 | Wazuh rule 100210 (level 14) | srcip=91.240.118.172 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.764 | INFO     | [SHUFFLE  ] INC-20261111-0014 | Webhook recebido -> execução 99a6ceb1 | score=0.692 eventos=10
+2026-11-11 01:51:56.764 | CRITICAL | [PLAYBOOK ] INC-20261111-0014 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 97% >= 70%; madrugada + 496 req/min >= 150; anomaly_score 0.692 >= 0.68
+2026-11-11 01:51:56.764 | ERROR    | [AWS-WAF  ] INC-20261111-0014 | BLOCK 91.240.118.172/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.764 | WARNING  | [THEHIVE  ] INC-20261111-0014 | Case #1058 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.764 | WARNING  | [SOC-ALERT] INC-20261111-0014 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.764 | INFO     | [SIEM     ] INC-20261111-0015 | Wazuh rule 100210 (level 14) | srcip=45.155.205.119 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.765 | INFO     | [SHUFFLE  ] INC-20261111-0015 | Webhook recebido -> execução 5ad37551 | score=0.691 eventos=7
+2026-11-11 01:51:56.765 | CRITICAL | [PLAYBOOK ] INC-20261111-0015 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 97% >= 70%; madrugada + 452 req/min >= 150; anomaly_score 0.691 >= 0.68
+2026-11-11 01:51:56.765 | ERROR    | [AWS-WAF  ] INC-20261111-0015 | BLOCK 45.155.205.119/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.765 | WARNING  | [THEHIVE  ] INC-20261111-0015 | Case #5809 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.765 | WARNING  | [SOC-ALERT] INC-20261111-0015 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.765 | INFO     | [SIEM     ] INC-20261111-0016 | Wazuh rule 100210 (level 14) | srcip=141.98.11.62 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.765 | INFO     | [SHUFFLE  ] INC-20261111-0016 | Webhook recebido -> execução 36e79e93 | score=0.686 eventos=9
+2026-11-11 01:51:56.765 | CRITICAL | [PLAYBOOK ] INC-20261111-0016 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 96% >= 70%; madrugada + 495 req/min >= 150; anomaly_score 0.686 >= 0.68
+2026-11-11 01:51:56.765 | ERROR    | [AWS-WAF  ] INC-20261111-0016 | BLOCK 141.98.11.62/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.765 | WARNING  | [THEHIVE  ] INC-20261111-0016 | Case #1039 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.765 | WARNING  | [SOC-ALERT] INC-20261111-0016 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.766 | INFO     | [SIEM     ] INC-20261111-0017 | Wazuh rule 100210 (level 14) | srcip=141.98.10.121 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.766 | INFO     | [SHUFFLE  ] INC-20261111-0017 | Webhook recebido -> execução 5a0f6828 | score=0.679 eventos=3
+2026-11-11 01:51:56.766 | CRITICAL | [PLAYBOOK ] INC-20261111-0017 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 90% >= 70%; madrugada + 453 req/min >= 150
+2026-11-11 01:51:56.766 | ERROR    | [AWS-WAF  ] INC-20261111-0017 | BLOCK 141.98.10.121/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.766 | WARNING  | [THEHIVE  ] INC-20261111-0017 | Case #2167 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.766 | WARNING  | [SOC-ALERT] INC-20261111-0017 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.766 | INFO     | [SIEM     ] INC-20261111-0018 | Wazuh rule 100210 (level 14) | srcip=5.188.206.18 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.766 | INFO     | [SHUFFLE  ] INC-20261111-0018 | Webhook recebido -> execução 85067252 | score=0.678 eventos=4
+2026-11-11 01:51:56.766 | CRITICAL | [PLAYBOOK ] INC-20261111-0018 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 93% >= 70%; madrugada + 476 req/min >= 150
+2026-11-11 01:51:56.766 | ERROR    | [AWS-WAF  ] INC-20261111-0018 | BLOCK 5.188.206.18/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.767 | WARNING  | [THEHIVE  ] INC-20261111-0018 | Case #5778 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.767 | WARNING  | [SOC-ALERT] INC-20261111-0018 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.767 | INFO     | [SIEM     ] INC-20261111-0019 | Wazuh rule 100210 (level 14) | srcip=89.248.165.74 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.767 | INFO     | [SHUFFLE  ] INC-20261111-0019 | Webhook recebido -> execução 841e611a | score=0.677 eventos=3
+2026-11-11 01:51:56.767 | CRITICAL | [PLAYBOOK ] INC-20261111-0019 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 97% >= 70%; madrugada + 414 req/min >= 150
+2026-11-11 01:51:56.767 | ERROR    | [AWS-WAF  ] INC-20261111-0019 | BLOCK 89.248.165.74/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.767 | WARNING  | [THEHIVE  ] INC-20261111-0019 | Case #9121 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.767 | WARNING  | [SOC-ALERT] INC-20261111-0019 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.767 | INFO     | [SIEM     ] INC-20261111-0020 | Wazuh rule 100210 (level 14) | srcip=103.145.13.209 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.767 | INFO     | [SHUFFLE  ] INC-20261111-0020 | Webhook recebido -> execução 9f39cefa | score=0.675 eventos=7
+2026-11-11 01:51:56.767 | CRITICAL | [PLAYBOOK ] INC-20261111-0020 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 93% >= 70%; madrugada + 499 req/min >= 150
+2026-11-11 01:51:56.768 | ERROR    | [AWS-WAF  ] INC-20261111-0020 | BLOCK 103.145.13.209/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.768 | WARNING  | [THEHIVE  ] INC-20261111-0020 | Case #9250 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.768 | WARNING  | [SOC-ALERT] INC-20261111-0020 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.768 | INFO     | [SIEM     ] INC-20261111-0021 | Wazuh rule 100200 (level 14) | srcip=209.141.58.146 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.768 | INFO     | [SHUFFLE  ] INC-20261111-0021 | Webhook recebido -> execução 214c02a7 | score=0.672 eventos=2
+2026-11-11 01:51:56.768 | CRITICAL | [PLAYBOOK ] INC-20261111-0021 | SEVERIDADE CRÍTICA | madrugada + 239 req/min >= 150
+2026-11-11 01:51:56.768 | ERROR    | [AWS-WAF  ] INC-20261111-0021 | BLOCK 209.141.58.146/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.768 | WARNING  | [THEHIVE  ] INC-20261111-0021 | Case #7875 criado | severity=CRITICAL(4) TLP:AMBER | MITRE N/A
+2026-11-11 01:51:56.768 | WARNING  | [SOC-ALERT] INC-20261111-0021 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.768 | INFO     | [SIEM     ] INC-20261111-0022 | Wazuh rule 100210 (level 14) | srcip=193.142.146.35 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.769 | INFO     | [SHUFFLE  ] INC-20261111-0022 | Webhook recebido -> execução 489aebb3 | score=0.666 eventos=4
+2026-11-11 01:51:56.769 | CRITICAL | [PLAYBOOK ] INC-20261111-0022 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 95% >= 70%; madrugada + 410 req/min >= 150
+2026-11-11 01:51:56.769 | ERROR    | [AWS-WAF  ] INC-20261111-0022 | BLOCK 193.142.146.35/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.769 | WARNING  | [THEHIVE  ] INC-20261111-0022 | Case #7707 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.769 | WARNING  | [SOC-ALERT] INC-20261111-0022 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.769 | INFO     | [SIEM     ] INC-20261111-0023 | Wazuh rule 100210 (level 14) | srcip=194.26.29.102 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.769 | INFO     | [SHUFFLE  ] INC-20261111-0023 | Webhook recebido -> execução ee588889 | score=0.651 eventos=5
+2026-11-11 01:51:56.769 | CRITICAL | [PLAYBOOK ] INC-20261111-0023 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 94% >= 70%; madrugada + 419 req/min >= 150
+2026-11-11 01:51:56.769 | ERROR    | [AWS-WAF  ] INC-20261111-0023 | BLOCK 194.26.29.102/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.769 | WARNING  | [THEHIVE  ] INC-20261111-0023 | Case #2947 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.769 | WARNING  | [SOC-ALERT] INC-20261111-0023 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.770 | INFO     | [SIEM     ] INC-20261111-0024 | Wazuh rule 100210 (level 14) | srcip=212.70.149.54 | Credential Stuffing / Brute Force
+2026-11-11 01:51:56.770 | INFO     | [SHUFFLE  ] INC-20261111-0024 | Webhook recebido -> execução e8e650b2 | score=0.635 eventos=1
+2026-11-11 01:51:56.770 | CRITICAL | [PLAYBOOK ] INC-20261111-0024 | SEVERIDADE CRÍTICA | madrugada + taxa de erro 80% >= 70%; madrugada + 357 req/min >= 150
+2026-11-11 01:51:56.770 | ERROR    | [AWS-WAF  ] INC-20261111-0024 | BLOCK 212.70.149.54/32 -> IPSet 'soar-blocklist-critical' (sa-east-1) | HTTP 200
+2026-11-11 01:51:56.770 | WARNING  | [THEHIVE  ] INC-20261111-0024 | Case #3945 criado | severity=CRITICAL(4) TLP:AMBER | MITRE T1110.004, T1110.001
+2026-11-11 01:51:56.770 | WARNING  | [SOC-ALERT] INC-20261111-0024 | Alerta enviado ao #soc-critical (Slack) | plantonista acionado
+2026-11-11 01:51:56.770 | INFO     | [SIEM     ] INC-20261111-0025 | Wazuh rule 100200 (level 10) | srcip=179.86.60.155 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.770 | INFO     | [SHUFFLE  ] INC-20261111-0025 | Webhook recebido -> execução f5ae71f4 | score=0.659 eventos=1
+2026-11-11 01:51:56.770 | WARNING  | [PLAYBOOK ] INC-20261111-0025 | SEVERIDADE MODERADA | anomaly_score 0.659 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.770 | INFO     | [AWS-WAF  ] INC-20261111-0025 | RATE LIMIT 179.86.60.155/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.770 | INFO     | [IDP-MFA  ] INC-20261111-0025 | Step-Up MFA obrigatório para 179.86.60.155 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.771 | INFO     | [SIEM     ] INC-20261111-0026 | Wazuh rule 100200 (level 10) | srcip=189.73.245.235 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.771 | INFO     | [SHUFFLE  ] INC-20261111-0026 | Webhook recebido -> execução b8b3a636 | score=0.657 eventos=1
+2026-11-11 01:51:56.771 | WARNING  | [PLAYBOOK ] INC-20261111-0026 | SEVERIDADE MODERADA | anomaly_score 0.657 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.771 | INFO     | [AWS-WAF  ] INC-20261111-0026 | RATE LIMIT 189.73.245.235/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.771 | INFO     | [IDP-MFA  ] INC-20261111-0026 | Step-Up MFA obrigatório para 189.73.245.235 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.771 | INFO     | [SIEM     ] INC-20261111-0027 | Wazuh rule 100200 (level 10) | srcip=201.33.243.157 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.771 | INFO     | [SHUFFLE  ] INC-20261111-0027 | Webhook recebido -> execução 68c97a08 | score=0.653 eventos=1
+2026-11-11 01:51:56.771 | WARNING  | [PLAYBOOK ] INC-20261111-0027 | SEVERIDADE MODERADA | anomaly_score 0.653 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.771 | INFO     | [AWS-WAF  ] INC-20261111-0027 | RATE LIMIT 201.33.243.157/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.771 | INFO     | [IDP-MFA  ] INC-20261111-0027 | Step-Up MFA obrigatório para 201.33.243.157 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.772 | INFO     | [SIEM     ] INC-20261111-0028 | Wazuh rule 100200 (level 10) | srcip=189.251.4.120 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.772 | INFO     | [SHUFFLE  ] INC-20261111-0028 | Webhook recebido -> execução 91561991 | score=0.651 eventos=1
+2026-11-11 01:51:56.772 | WARNING  | [PLAYBOOK ] INC-20261111-0028 | SEVERIDADE MODERADA | anomaly_score 0.651 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.772 | INFO     | [AWS-WAF  ] INC-20261111-0028 | RATE LIMIT 189.251.4.120/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.772 | INFO     | [IDP-MFA  ] INC-20261111-0028 | Step-Up MFA obrigatório para 189.251.4.120 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.772 | INFO     | [SIEM     ] INC-20261111-0029 | Wazuh rule 100200 (level 10) | srcip=201.252.220.119 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.772 | INFO     | [SHUFFLE  ] INC-20261111-0029 | Webhook recebido -> execução d27795f6 | score=0.649 eventos=1
+2026-11-11 01:51:56.772 | WARNING  | [PLAYBOOK ] INC-20261111-0029 | SEVERIDADE MODERADA | anomaly_score 0.649 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.772 | INFO     | [AWS-WAF  ] INC-20261111-0029 | RATE LIMIT 201.252.220.119/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.772 | INFO     | [IDP-MFA  ] INC-20261111-0029 | Step-Up MFA obrigatório para 201.252.220.119 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.773 | INFO     | [SIEM     ] INC-20261111-0030 | Wazuh rule 100200 (level 10) | srcip=191.35.191.107 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.773 | INFO     | [SHUFFLE  ] INC-20261111-0030 | Webhook recebido -> execução d8a204b7 | score=0.648 eventos=1
+2026-11-11 01:51:56.773 | WARNING  | [PLAYBOOK ] INC-20261111-0030 | SEVERIDADE MODERADA | anomaly_score 0.648 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.773 | INFO     | [AWS-WAF  ] INC-20261111-0030 | RATE LIMIT 191.35.191.107/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.773 | INFO     | [IDP-MFA  ] INC-20261111-0030 | Step-Up MFA obrigatório para 191.35.191.107 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.773 | INFO     | [SIEM     ] INC-20261111-0031 | Wazuh rule 100200 (level 10) | srcip=191.208.38.81 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.773 | INFO     | [SHUFFLE  ] INC-20261111-0031 | Webhook recebido -> execução de07fb4f | score=0.647 eventos=1
+2026-11-11 01:51:56.773 | WARNING  | [PLAYBOOK ] INC-20261111-0031 | SEVERIDADE MODERADA | anomaly_score 0.647 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.773 | INFO     | [AWS-WAF  ] INC-20261111-0031 | RATE LIMIT 191.208.38.81/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.773 | INFO     | [IDP-MFA  ] INC-20261111-0031 | Step-Up MFA obrigatório para 191.208.38.81 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.773 | INFO     | [SIEM     ] INC-20261111-0032 | Wazuh rule 100200 (level 10) | srcip=201.106.101.82 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.773 | INFO     | [SHUFFLE  ] INC-20261111-0032 | Webhook recebido -> execução f071571b | score=0.647 eventos=1
+2026-11-11 01:51:56.774 | WARNING  | [PLAYBOOK ] INC-20261111-0032 | SEVERIDADE MODERADA | anomaly_score 0.647 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.774 | INFO     | [AWS-WAF  ] INC-20261111-0032 | RATE LIMIT 201.106.101.82/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.774 | INFO     | [IDP-MFA  ] INC-20261111-0032 | Step-Up MFA obrigatório para 201.106.101.82 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.774 | INFO     | [SIEM     ] INC-20261111-0033 | Wazuh rule 100200 (level 10) | srcip=187.61.22.145 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.774 | INFO     | [SHUFFLE  ] INC-20261111-0033 | Webhook recebido -> execução c8679e38 | score=0.646 eventos=1
+2026-11-11 01:51:56.774 | WARNING  | [PLAYBOOK ] INC-20261111-0033 | SEVERIDADE MODERADA | anomaly_score 0.646 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.774 | INFO     | [AWS-WAF  ] INC-20261111-0033 | RATE LIMIT 187.61.22.145/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.774 | INFO     | [IDP-MFA  ] INC-20261111-0033 | Step-Up MFA obrigatório para 187.61.22.145 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.774 | INFO     | [SIEM     ] INC-20261111-0034 | Wazuh rule 100200 (level 10) | srcip=201.60.138.194 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.775 | INFO     | [SHUFFLE  ] INC-20261111-0034 | Webhook recebido -> execução 52e9aa84 | score=0.645 eventos=1
+2026-11-11 01:51:56.775 | WARNING  | [PLAYBOOK ] INC-20261111-0034 | SEVERIDADE MODERADA | anomaly_score 0.645 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.775 | INFO     | [AWS-WAF  ] INC-20261111-0034 | RATE LIMIT 201.60.138.194/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.775 | INFO     | [IDP-MFA  ] INC-20261111-0034 | Step-Up MFA obrigatório para 201.60.138.194 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.775 | INFO     | [SIEM     ] INC-20261111-0035 | Wazuh rule 100200 (level 10) | srcip=177.35.62.30 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.776 | INFO     | [SHUFFLE  ] INC-20261111-0035 | Webhook recebido -> execução 766db9f6 | score=0.644 eventos=1
+2026-11-11 01:51:56.776 | WARNING  | [PLAYBOOK ] INC-20261111-0035 | SEVERIDADE MODERADA | anomaly_score 0.644 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.776 | INFO     | [AWS-WAF  ] INC-20261111-0035 | RATE LIMIT 177.35.62.30/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.776 | INFO     | [IDP-MFA  ] INC-20261111-0035 | Step-Up MFA obrigatório para 177.35.62.30 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.776 | INFO     | [SIEM     ] INC-20261111-0036 | Wazuh rule 100200 (level 10) | srcip=179.76.202.242 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.777 | INFO     | [SHUFFLE  ] INC-20261111-0036 | Webhook recebido -> execução b2e67f3c | score=0.641 eventos=1
+2026-11-11 01:51:56.777 | WARNING  | [PLAYBOOK ] INC-20261111-0036 | SEVERIDADE MODERADA | anomaly_score 0.641 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.777 | INFO     | [AWS-WAF  ] INC-20261111-0036 | RATE LIMIT 179.76.202.242/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.777 | INFO     | [IDP-MFA  ] INC-20261111-0036 | Step-Up MFA obrigatório para 179.76.202.242 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.777 | INFO     | [SIEM     ] INC-20261111-0037 | Wazuh rule 100200 (level 10) | srcip=201.182.81.144 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.778 | INFO     | [SHUFFLE  ] INC-20261111-0037 | Webhook recebido -> execução 472b549f | score=0.640 eventos=1
+2026-11-11 01:51:56.778 | WARNING  | [PLAYBOOK ] INC-20261111-0037 | SEVERIDADE MODERADA | anomaly_score 0.640 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.778 | INFO     | [AWS-WAF  ] INC-20261111-0037 | RATE LIMIT 201.182.81.144/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.778 | INFO     | [IDP-MFA  ] INC-20261111-0037 | Step-Up MFA obrigatório para 201.182.81.144 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.778 | INFO     | [SIEM     ] INC-20261111-0038 | Wazuh rule 100200 (level 10) | srcip=189.199.119.214 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.778 | INFO     | [SHUFFLE  ] INC-20261111-0038 | Webhook recebido -> execução e5f7ea78 | score=0.639 eventos=1
+2026-11-11 01:51:56.779 | WARNING  | [PLAYBOOK ] INC-20261111-0038 | SEVERIDADE MODERADA | anomaly_score 0.639 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.779 | INFO     | [AWS-WAF  ] INC-20261111-0038 | RATE LIMIT 189.199.119.214/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.779 | INFO     | [IDP-MFA  ] INC-20261111-0038 | Step-Up MFA obrigatório para 189.199.119.214 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.779 | INFO     | [SIEM     ] INC-20261111-0039 | Wazuh rule 100200 (level 10) | srcip=177.143.203.78 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.779 | INFO     | [SHUFFLE  ] INC-20261111-0039 | Webhook recebido -> execução 480194b3 | score=0.636 eventos=1
+2026-11-11 01:51:56.779 | WARNING  | [PLAYBOOK ] INC-20261111-0039 | SEVERIDADE MODERADA | anomaly_score 0.636 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.779 | INFO     | [AWS-WAF  ] INC-20261111-0039 | RATE LIMIT 177.143.203.78/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.780 | INFO     | [IDP-MFA  ] INC-20261111-0039 | Step-Up MFA obrigatório para 177.143.203.78 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.780 | INFO     | [SIEM     ] INC-20261111-0040 | Wazuh rule 100200 (level 10) | srcip=189.136.104.198 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.780 | INFO     | [SHUFFLE  ] INC-20261111-0040 | Webhook recebido -> execução 1ee0029d | score=0.632 eventos=1
+2026-11-11 01:51:56.780 | WARNING  | [PLAYBOOK ] INC-20261111-0040 | SEVERIDADE MODERADA | anomaly_score 0.632 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.780 | INFO     | [AWS-WAF  ] INC-20261111-0040 | RATE LIMIT 189.136.104.198/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.780 | INFO     | [IDP-MFA  ] INC-20261111-0040 | Step-Up MFA obrigatório para 189.136.104.198 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.781 | INFO     | [SIEM     ] INC-20261111-0041 | Wazuh rule 100200 (level 10) | srcip=177.10.56.225 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.781 | INFO     | [SHUFFLE  ] INC-20261111-0041 | Webhook recebido -> execução 0f62ba19 | score=0.628 eventos=1
+2026-11-11 01:51:56.781 | WARNING  | [PLAYBOOK ] INC-20261111-0041 | SEVERIDADE MODERADA | anomaly_score 0.628 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.781 | INFO     | [AWS-WAF  ] INC-20261111-0041 | RATE LIMIT 177.10.56.225/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.781 | INFO     | [IDP-MFA  ] INC-20261111-0041 | Step-Up MFA obrigatório para 177.10.56.225 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.781 | INFO     | [SIEM     ] INC-20261111-0042 | Wazuh rule 100200 (level 10) | srcip=201.38.127.177 | Desvio comportamental (baseline de API)
+2026-11-11 01:51:56.781 | INFO     | [SHUFFLE  ] INC-20261111-0042 | Webhook recebido -> execução 2bda38b8 | score=0.625 eventos=1
+2026-11-11 01:51:56.781 | WARNING  | [PLAYBOOK ] INC-20261111-0042 | SEVERIDADE MODERADA | anomaly_score 0.625 acima do limiar do modelo, sem indicadores críticos
+2026-11-11 01:51:56.781 | INFO     | [AWS-WAF  ] INC-20261111-0042 | RATE LIMIT 201.38.127.177/32 -> 100 req/5min (IPSet 'soar-ratelimit-watchlist')
+2026-11-11 01:51:56.781 | INFO     | [IDP-MFA  ] INC-20261111-0042 | Step-Up MFA obrigatório para 201.38.127.177 (FIDO2/Push/TOTP, TTL 1h)
+2026-11-11 01:51:56.781 | INFO     | [PLAYBOOK ] ------------------------------------------------------------------------------------
+2026-11-11 01:51:56.782 | ERROR    | [AWS-WAF  ] UpdateIPSet 'soar-blocklist-critical' -> 24 endereços bloqueados | HTTP 200
+2026-11-11 01:51:56.782 | INFO     | [AWS-WAF  ] UpdateIPSet 'soar-ratelimit-watchlist' -> 18 endereços sob rate limiting | HTTP 200
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] ================================================================================================
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ]  RESUMO DA EXECUÇÃO DO PLAYBOOK SOAR
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] ================================================================================================
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Eventos analisados ............: 5,000
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Eventos anômalos (IA) ..........: 350
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] IPs suspeitos ..................: 42
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Incidentes CRÍTICOS ............: 24
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Incidentes MODERADOS ...........: 18
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] IPs bloqueados no AWS WAF ......: 24
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] IPs sob Rate Limiting ..........: 18
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Step-Up MFA acionado ...........: 18
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Cases críticos no TheHive ......: 24
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Alertas enviados ao SOC ........: 24
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Total de ações automatizadas ...: 108
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Validação: 24/24 IPs bloqueados são atacantes reais | cobertura 100% dos 24 IPs atacantes
+2026-11-11 01:51:56.788 | INFO     | [PLAYBOOK ] Tempo de resposta do playbook ..: 0.06s (vs. horas em triagem manual)
+2026-11-11 01:51:56.789 | INFO     | [PLAYBOOK ] Payloads: output\soar_actions_payload.json | Log: output\soar_execution.log
+2026-11-11 01:51:56.789 | INFO     | [PLAYBOOK ] ================================================================================================

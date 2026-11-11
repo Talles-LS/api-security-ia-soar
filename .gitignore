@@ -1,0 +1,15 @@
+# Ambiente virtual / cache Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE / SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Observação: data/ e output/ são versionados de propósito, para que o
+# repositório acadêmico já exiba os artefatos gerados pela pipeline.
+
